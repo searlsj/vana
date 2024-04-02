@@ -1,0 +1,15 @@
+{
+    "extends": "../tsconfig-base.json",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "../build",
+        "rootDir": "../",
+        "composite": true
+    },
+    
+    /* Need to include all files that are needed by this project */
+    "include": [
+        "./**/*",
+        "../package.json"
+    ]
+}
