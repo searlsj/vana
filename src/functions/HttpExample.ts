@@ -11,7 +11,7 @@ export async function HttpExample(request: HttpRequest, context: InvocationConte
         "The movie made it into my top ten favorites.",
         "What a great movie!",
     ];
-
+      
     const options: TextAnalysisClientOptions = {
         allowInsecureConnection: true
     };
@@ -19,7 +19,7 @@ export async function HttpExample(request: HttpRequest, context: InvocationConte
     
     let results;
     try {
-        results = await client.analyze("SentimentAnalysis", documents);
+        results = await client.analyze("LanguageDetection", documents);
     } catch (error: any) {
         context.log(error);
     }
